@@ -24,6 +24,9 @@ phases:
   name: Rolling
   phaseSteps:
   - type: K8S_PHASE_STEP
+    name: Verify
+    stepsInParallel: false
+  - type: K8S_PHASE_STEP
     name: Deploy
     steps:
     - type: K8S_APPLY
@@ -31,9 +34,6 @@ phases:
       properties:
         filePaths: adcapitaldb-deployment.yaml, rabbitmq-deployment.yaml
         stateTimeoutInMinutes: 10
-    stepsInParallel: false
-  - type: K8S_PHASE_STEP
-    name: Verify
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
