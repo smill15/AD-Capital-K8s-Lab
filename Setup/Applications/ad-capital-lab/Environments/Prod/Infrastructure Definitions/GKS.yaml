@@ -4,6 +4,6 @@ cloudProviderType: KUBERNETES_CLUSTER
 deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
-  cloudProviderName: K8s Cloud Provider
+  cloudProviderName: K8s Cloud Provider SE-Days
   namespace: default
   releaseName: release-${infra.kubernetes.infraId}

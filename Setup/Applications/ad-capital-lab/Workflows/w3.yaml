@@ -18,7 +18,7 @@ notificationRules:
   - ZEzcYfyxReaEZw21R3J2ww
 phases:
 - type: KUBERNETES
-  computeProviderName: K8s Cloud Provider
+  computeProviderName: K8s Cloud Provider SE-Days
   daemonSet: false
   infraDefinitionName: GKS
   name: Rolling
@@ -45,7 +45,7 @@ phases:
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: K8s Cloud Provider
+  computeProviderName: K8s Cloud Provider SE-Days
   daemonSet: false
   infraDefinitionName: GKS
   name: Rollback Rolling
